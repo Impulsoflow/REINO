@@ -4,78 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Capítulo 01 - Rogério Braga</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <style>
-        :root {
-            --text-main: #f8fafc;
-            --text-muted: #cbd5e1;
-            --semana-bg: rgba(10, 25, 60, 0.75);
-            --card-border: rgba(255, 255, 255, 0.15);
-        }
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #001F7F; 
-            background-image: linear-gradient(rgba(0, 15, 50, 0.75), rgba(0, 10, 30, 0.9));
-            color: var(--text-main);
+            background-color: #ffffff; /* Fundo branco */
+            color: #000000; /* Fonte principal em preto */
             padding: 25px 15px;
             min-height: 100vh;
             line-height: 1.6;
         }
         .app-container { max-width: 800px; margin: 0 auto; }
         .header {
-            background: rgba(10, 20, 50, 0.7);
-            backdrop-filter: blur(16px);
-            -webkit-backdrop-filter: blur(16px);
+            background: #f8fafc;
             padding: 30px 20px;
             border-radius: 16px;
             text-align: center;
             margin-bottom: 30px;
-            border: 1px solid var(--card-border);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-            position: relative;
+            border: 1px solid #e2e8f0;
         }
-        .header::before {
-            content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px;
-            background: linear-gradient(90deg, transparent, #818cf8, #38bdf8, transparent);
-            border-top-left-radius: 16px; border-top-right-radius: 16px;
+        /* Título do cabeçalho sem negrito e em azul escuro */
+        .header h1 { 
+            font-size: 20px; 
+            font-weight: normal; 
+            color: #00008B; 
+            margin-bottom: 8px; 
+            text-transform: uppercase; 
         }
-        .header h1 { font-size: 20px; font-weight: 800; color: #f8fafc; margin-bottom: 8px; text-transform: uppercase; }
-        .header p { font-size: 16px; color: #38bdf8; font-weight: 700; }
-        .header .date { font-size: 13px; color: #cbd5e1; margin-top: 5px; font-weight: 500; }
+        .header p { font-size: 16px; color: #333333; }
+        .header .date { font-size: 13px; color: #666666; margin-top: 5px; }
         
         .content-card {
-            background: var(--semana-bg);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
+            background: #ffffff;
             padding: 40px;
             border-radius: 14px;
-            border: 1px solid var(--card-border);
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+            border: 1px solid #e2e8f0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
         }
+        /* Título do Capítulo em Azul Escuro e sem negrito */
         .chapter-title {
-            font-size: 26px; font-weight: 800; color: #f59e0b; 
-            margin-bottom: 30px; text-align: center; line-height: 1.3;
-            padding-bottom: 15px; border-bottom: 1px dashed rgba(255,255,255,0.2);
+            font-size: 26px; 
+            font-weight: normal; 
+            color: #00008B; 
+            margin-bottom: 30px; 
+            text-align: center; 
+            line-height: 1.3;
+            padding-bottom: 15px; 
+            border-bottom: 1px solid #e2e8f0;
         }
         
-        /* Formatação de parágrafos para o texto na íntegra */
+        /* Texto base em preto */
         .chapter-text p { 
             margin-bottom: 20px; 
             font-size: 16px; 
-            color: #e2e8f0; 
+            color: #000000; 
             text-align: justify; 
             line-height: 1.7;
         }
         
-        /* Nova formatação exclusiva para Textos Bíblicos (Itálico) */
+        /* Formatação exclusiva para Textos Bíblicos (Itálico + Azul Escuro) */
         .biblico {
             font-style: italic;
-            color: #fcd34d; /* Leve tom amarelado para destacar suavemente a passagem bíblica, se desejar */
+            color: #00008B; 
         }
 
         .chapter-text h3 { 
-            color: #38bdf8; 
+            font-weight: normal;
+            color: #00008B; 
             margin-top: 35px; 
             margin-bottom: 15px; 
             font-size: 20px; 
@@ -99,19 +95,11 @@
         <div class="chapter-title">CAPÍTULO 01 <br> Jesus - a plenitude da revelação de Deus</div>
         <div class="chapter-text">
             
-            <p>O conceito da revelação divina sempre foi um dos grandes mistérios perseguidos pela humanidade ao longo dos séculos. Quando olhamos para as Escrituras, compreendemos que o homem, por seu próprio intelecto, jamais seria capaz de desvendar a pessoa de Deus. É necessário que o próprio Deus tome a iniciativa de Se dar a conhecer.</p>
+            <p>O conceito da revelação divina sempre foi um dos grandes mistérios perseguidos pela humanidade ao longo dos séculos. Quando olhamos para as Escrituras, compreendemos que o homem, por seu próprio intelecto, jamais seria capaz de desvendar a pessoa de Deus.</p>
             
-            <p>A Bíblia nos mostra exatamente este movimento. O apóstolo João registrou de forma magistral: <span class="biblico">"No princípio era o Verbo, e o Verbo estava com Deus, e o Verbo era Deus." (João 1:1)</span>. E, mais adiante, ele complementa afirmando que <span class="biblico">"Aquele que é a Palavra tornou-se carne e viveu entre nós. Vimos a sua glória, glória como do Unigênito vindo do Pai, cheio de graça e de verdade." (João 1:14)</span>.</p>
+            <p>A Bíblia nos mostra exatamente este movimento. O apóstolo João registrou de forma magistral: <span class="biblico">"No princípio era o Verbo, e o Verbo estava com Deus, e o Verbo era Deus." (João 1:1)</span>.</p>
             
-            <p>[AQUI ENTRARÁ O TEXTO NA ÍNTEGRA DO LIVRO ORIGINAL, EXATAMENTE COMO ESTÁ NO PDF, SEM CORTES OU RESUMOS]</p>
-
-            <h3>A Inacessibilidade de Deus e a Encarnação</h3>
-            
-            <p>A divindade, em sua essência, habita em um lugar onde nossos sentidos não podem alcançar. Paulo, escrevendo a Timóteo, descreve Deus como <span class="biblico">"o único que possui imortalidade, que habita em luz inacessível, a quem ninguém viu nem pode ver. A ele sejam honra e poder para sempre. Amém." (1 Timóteo 6:16)</span>. Como então podemos nos relacionar com um Deus que habita em luz inacessível?</p>
-            
-            <p>A resposta está exclusivamente na pessoa de Jesus Cristo. Ele não é apenas um mensageiro; Ele é a própria mensagem encarnada. Quando os discípulos estavam confusos, Filipe expressou a dúvida de todos: <span class="biblico">"Senhor, mostra-nos o Pai, e isso nos basta." (João 14:8)</span>. A resposta de Jesus ecoa pela eternidade: <span class="biblico">"Você não me conhece, Filipe, mesmo depois de eu ter estado com vocês durante tanto tempo? Quem vê a mim vê o Pai." (João 14:9)</span>.</p>
-
-            <p>[O TEXTO CONTINUARÁ SENDO EXTRAÍDO NA ÍNTEGRA ATÉ O FIM DO CAPÍTULO...]</p>
+            <p>[COLE O TEXTO DO CAPÍTULO AQUI ENVOLVENDO OS VERSÍCULOS COM A TAG SPAN CLASS="BIBLICO"]</p>
 
         </div>
     </div>
